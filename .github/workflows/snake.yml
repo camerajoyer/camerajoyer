@@ -32,16 +32,6 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      # generates a 3D contribution calendar into ./profile-3d-contrib
-      - name: generate 3D contribution calendar
-        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
-        env:
-          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-
-      - name: collect 3D calendar into dist
-        run: cp -r profile-3d-contrib dist/
-
       # push the content of <build_dir> to a branch
       # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
       - name: push generated svgs to the output branch
