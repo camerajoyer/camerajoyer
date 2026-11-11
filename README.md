@@ -7,7 +7,6 @@ Building things with Python, AI, and a little curiosity.
 - 🧠 Exploring LLMs, prompt engineering & AI evaluation
 - 🐍 Python is my daily driver
 - ⚡ Turning complex workflows into smart automation
-- 🌏 Based in Japan
 
 ### 🛠️ Tech Stack
 
